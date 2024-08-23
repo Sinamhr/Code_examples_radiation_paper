@@ -41,7 +41,7 @@ To run the code, please follow these steps:
 
 1. Clone this repository to your local machine:
     ```bash
-    git clone 
+    git clone https://github.com/Sinamhr/Code_examples_radiation_paper.git 
     ```
 2. Install the required libraries using pip or conda as specified in the headers of each script.
 3. Run the example scripts provided to reproduce the results or adapt the code for your own analysis.
