@@ -328,10 +328,9 @@ def ploting_the_class_contribution(Sea_Ice_season_class, Sea_Ice_class_WCVC, Sea
 
 # loading the Sea Ice Concentration (SIC) map for the whole data point in the Control (C) and Experiment (E) runs
 # they have been transferred to the Lambert azimuthal equal-area projection
-loaded = np.load('Sea_Ice_Concentartion.npz')
+loaded = np.load('Sea_Ice_Concentartion_C.npz')
 
 Sea_Ice_C = loaded['Sea_Ice_C']      # SIC for data points (daily) in the Control run, shape (10949 [days from the first day of the simulation], 83 [projection x], 83 [projection y])
-Sea_Ice_E = loaded['Sea_Ice_E']      # SIC for data points (daily) in the Experiment run (ensemble mean)
 Month = loaded['Month']              # month of the year for each datapoint, shape (10949 [data point id])
 Day = loaded['Day']                  # day of the year for each datapoint
 Year = loaded['Year']                # the simulation year for each datapoint
@@ -343,15 +342,17 @@ grid_lon = loaded['grid_lon']
 Mask = loaded['Mask']               # mask for data southward of latitude 30 deg North
 
 
+
+loaded = np.load('Sea_Ice_Concentartion_E.npz')
+Sea_Ice_E = loaded['Sea_Ice_E']      # SIC for data points (daily) in the Experiment run, shape (10949 [days from the first day of the simulation], 83 [projection x], 83 [projection y])
+
+
 # loading the clastering labels
 # for each daily datapoint the class labels determine whcih cluster the data point is assigned to
 loaded = np.load('MCAE_clusterig_labels.npz')
 
 predict_label_C = loaded['predict_label_C']   # labels for data ponts in C [range form 0 to 5]
 predict_label_E = loaded['predict_label_E']   # labels for data ponts in E [range form 0 to 5]
-
-
-
 
 
 
