@@ -31,6 +31,13 @@ Contains code for the implementation of conventional methods, including Self-Org
 #### `EOF_analysis`
 - **Description:** EOF analysis code example
 
+### `Optimal_cluster_measure` Directory
+This directory contains code that we developed to determine the optimal number of clusters based on the distribution of data points in the latent representation.
+#### `Optimal_clustering_number_measure.py`
+- **Description:** This script determines the optimal number of clusters in an unsupervised setting by quantifying how well the clustering outcomes align with an ideal scenario. The method operates on the principle that, in an ideal clustering situation, each set of data points consistently falls within the same cluster across multiple initializations of the k-means algorithm, regardless of its random start.
+- **Note:** This code computes a clustering score for each potential cluster count. The optimal cluster number is identified by calculating the score for different cluster counts and the cluster count with the minimum scorce is the optimal cluster count. this minimum suggesting a stable and consistent clustering performance which related to the density of data point in the latent representation.
+
+
 ## Requirements
 
 The required libraries are listed at the top of each script. Please ensure all dependencies are installed before running the code.
