@@ -62,3 +62,9 @@ Mehrdad, S., Handorf, D., Höschel, I., Karami, K., Quaas, J., Dipu, S., and Jac
 ## License
 
 [MIT License](LICENSE)
+
+## DOI
+
+The code and data associated with this project can be cited using the following DOI:
+
+[10.5281/zenodo.13371085](https://doi.org/10.5281/zenodo.13371085)
