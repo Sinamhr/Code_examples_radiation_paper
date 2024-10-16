@@ -57,7 +57,7 @@ To run the code, please follow these steps:
 
 If you use this code in your work, please cite our paper as follows:
 
-Mehrdad, S., Handorf, D., Höschel, I., Karami, K., Quaas, J., Dipu, S., and Jacobi, C.: Arctic Climate Response to European Radiative Forcing: A Deep Learning Approach, EGUsphere [preprint], https://doi.org/10.5194/egusphere-2023-3033, 2024.
+Mehrdad, S., Handorf, D., Höschel, I., Karami, K., Quaas, J., Dipu, S., and Jacobi, C.: Arctic climate response to European radiative forcing: a deep learning study on circulation pattern changes, Weather Clim. Dynam., 5, 1223–1268, https://doi.org/10.5194/wcd-5-1223-2024, 2024.
 
 ## License
 
